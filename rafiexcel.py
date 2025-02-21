@@ -8,7 +8,7 @@ import io
 from openpyxl.drawing.image import Image
 from PIL import Image as PILImage
 import os
-from core.file import download_file_to_bytes
+from file import download_file_to_bytes
 from datetime import datetime, timedelta
 
 # Color Definition
@@ -136,7 +136,8 @@ class RafiExcel:
             path_file:str
             ):
         image_data = download_file_to_bytes(path=path_file)
-        img = PILImage.open(io.BytesIO(image_data))
+        # img = PILImage.open(io.BytesIO(image_data))
+        img = PILImage.open(image_data)
         ws.column_dimensions[column_id].width = 30
         ws.row_dimensions[row].height = 160
         newsize = (210, 210)

@@ -1,0 +1,6 @@
+MINIO_ENPOINT='dummy'
+MINIO_ACCESS_KEY='dummy'
+MINIO_SECRET_KEY='dummy'
+MINIO_SECURE='dummy'
+MINIO_BUCKET='dummy'
+STORAGE='local'

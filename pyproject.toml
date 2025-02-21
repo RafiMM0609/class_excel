@@ -10,6 +10,7 @@ python = "^3.11"
 openpyxl = "^3.0.10"
 pillow = "^11.1.0"
 starlette = "^0.45.3"
+minio = "^7.2.15"
 
 
 [build-system]
